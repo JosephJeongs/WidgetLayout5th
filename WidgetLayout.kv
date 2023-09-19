@@ -1,0 +1,38 @@
+BoxLayoutExample
+
+<BoxLayoutExample>:
+    orientation: "horizontal"
+    spacing: "20dp"
+    Button:
+        text: "Button A"
+        background_color: 1,.5,.75, 3
+        size_hint: .5,1
+    Button:
+        text: "Button B"
+        background_color: 75,.5,.25, 1
+        size_hint: .75,1
+    Button:
+        text: "Button C"
+        background_color: .25,.75,.50, 2
+        size_hint: .5,1
+        #horizontal positions: "x(left)","center_x","right"
+        #veritcal positions: "y(bottom)","center_y","top"
+        pos_hint: {"center_y":0}
+
+
+
+
+
+<MainWidget>
+    Button:
+        text: "Push me"
+        size: "100dp","100dp"
+        pos: "350dp","250dp"
+        color: .25,1,.25
+        background_color: 1,.5,.75, 3
+        font_size: "20sp"
+
+    Label:
+        text: "Label A"
+        size: "50dp","75dp"
+        pos: "350dp","500dp"
