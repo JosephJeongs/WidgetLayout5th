@@ -1,7 +1,33 @@
-BoxLayoutExample
+#StackLayoutExample
+
+#<StackLayoutExample>:
+    #lr(left - right), rl(right - left)
+    #tb(top - bottom), bt(bottom - top)
+    #orientation: "rl-bt"
+    #Button:
+        #text: "A"
+        #size_hint: .2,.2
+    #Button:
+        #text: "A"
+        #size_hint: .4,.2
+    #Button:
+        #text: "A"
+        #size_hint: .2,.2
+    #Button:
+        #text: "A"
+        #size_hint: .4,.2
+    #Button:
+        #text: "A"
+        #size_hint: .2,.2
+
+
+
+
+
+#BoxLayoutExample
 
 <BoxLayoutExample>:
-    orientation: "horizontal"
+    orientation: "vertical"
     spacing: "20dp"
     Button:
         text: "Button A"
@@ -14,12 +40,10 @@ BoxLayoutExample
     Button:
         text: "Button C"
         background_color: .25,.75,.50, 2
-        size_hint: .5,1
+        #size_hint: .5,1
         #horizontal positions: "x(left)","center_x","right"
         #veritcal positions: "y(bottom)","center_y","top"
-        pos_hint: {"center_y":0}
-
-
+        #pos_hint: {"center_y":0}
 
 
 
@@ -31,7 +55,6 @@ BoxLayoutExample
         color: .25,1,.25
         background_color: 1,.5,.75, 3
         font_size: "20sp"
-
     Label:
         text: "Label A"
         size: "50dp","75dp"
