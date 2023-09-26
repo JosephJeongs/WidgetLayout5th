@@ -1,4 +1,71 @@
-#StackLayoutExample
+LayoutAssignment
+
+<LayoutAssignment>:
+    orientation: "vertical"
+    Label:
+        text: "Layout Assignment"
+        size_hint: 1,.2
+    StackLayout:
+        orientation: "lr-tb"
+        spacing: "10dp"
+        Button:
+            text: "Button A"
+            background_color: .9,.3,.75
+            size_hint: .15,.95
+        Button:
+            text: "Button B"
+            background_color: .9,.3,.75
+            size_hint: .15,.95
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        Button:
+            text: "Button C"
+            background_color: .9,0,.75
+            size_hint: .2,.45
+        Button:
+            text: "Button D"
+            background_color: .9,0,.75
+            size_hint: .2,.45
+        Button:
+            text: "Button E"
+            background_color: .9,0,.75
+            size_hint: .2,.45
+
+
+<ScrollViewExample@ScrollView>:
+    StackLayoutExample:
+        size_hint: 1,None
+        height: self.minimum_height
+
+
+<GridLayoutExample>:
+    #define the number of rows and columns
+    rows: 2
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+    Button:
+        text: "A"
+
+
+
 
 #<StackLayoutExample>:
     #lr(left - right), rl(right - left)
@@ -21,25 +88,22 @@
         #size_hint: .2,.2
 
 
-
-
-
 #BoxLayoutExample
 
-<BoxLayoutExample>:
-    orientation: "vertical"
-    spacing: "20dp"
-    Button:
-        text: "Button A"
-        background_color: 1,.5,.75, 3
-        size_hint: .5,1
-    Button:
-        text: "Button B"
-        background_color: 75,.5,.25, 1
-        size_hint: .75,1
-    Button:
-        text: "Button C"
-        background_color: .25,.75,.50, 2
+#<BoxLayoutExample>:
+    #orientation: "vertical"
+    #spacing: "20dp"
+    #Button:
+        #text: "Button A"
+        #background_color: 1,.5,.75, 3
+        #size_hint: .5,1
+    #Button:
+        #text: "Button B"
+        #background_color: 75,.5,.25, 1
+        #size_hint: .75,1
+    #Button:
+        #text: "Button C"
+        #background_color: .25,.75,.50, 2
         #size_hint: .5,1
         #horizontal positions: "x(left)","center_x","right"
         #veritcal positions: "y(bottom)","center_y","top"
